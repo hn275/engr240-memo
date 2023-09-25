@@ -16,7 +16,7 @@
         SUBJECT:
     ],
     align(left)[
-        Dr. Kate Kipskey \
+        Dr. Kate Skipsey \
         Hal Nguyen \
         September 24#super[th], 2023 \
         Enhancing Web Services API
@@ -115,7 +115,7 @@ of what the current site looks like (Figure 1), and what it could be (Figure 2):
 == Security
 
 The current rate limiter implementation is done with a session ID, assigned via HTTP cookie, 
-which protects the infrastructure from attackers who are on a web browsers. However, a script can 
+which protects the infrastructure from attackers who are on a web browsers. However, a #link("https://github.com/hn275/engr240-memo/blob/main/memo/main.go")[script] can 
 be written in a such way that on each request, while having the same API key, does not encapsulate 
 the HTTP cookie, and thus allow the attacker to make as many request as they like, which would 
 overload the server, and thus preventing other users from consuming this service.
